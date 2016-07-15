@@ -2,8 +2,8 @@
 //  View1.swift
 //  Hunt Me If You Can
 //
-//  Created by Dung Nguyen Tien on 7/15/16.
-//  Copyright © 2016 David T. Nguyen. All rights reserved.
+//  Created by David T. Nguyen on 7/15/16.
+//  dunguk@gmail.com
 //
 
 import UIKit
