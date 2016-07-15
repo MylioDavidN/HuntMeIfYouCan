@@ -2,11 +2,12 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10117"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="View2" customModule="Hunt_Me_If_You_Can" customModuleProvider="target">
             <connections>
+                <outlet property="cameraView" destination="1ix-Fg-mlT" id="Gvk-4r-Z8d"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +15,21 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ix-Fg-mlT">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
             <color key="backgroundColor" red="0.9629245400428772" green="0.031571652740240097" blue="0.97627216577529907" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1ix-Fg-mlT" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="0WQ-Af-CCk"/>
+                <constraint firstAttribute="bottom" secondItem="1ix-Fg-mlT" secondAttribute="bottom" id="Gv4-Pg-3MT"/>
+                <constraint firstItem="1ix-Fg-mlT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="KUN-Jn-Y5q"/>
+                <constraint firstItem="1ix-Fg-mlT" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="VI9-AS-yY6"/>
+                <constraint firstItem="1ix-Fg-mlT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="eMc-j8-QM4"/>
+                <constraint firstAttribute="trailing" secondItem="1ix-Fg-mlT" secondAttribute="trailing" id="g9r-zA-WhZ"/>
+            </constraints>
         </view>
     </objects>
 </document>
